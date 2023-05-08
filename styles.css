@@ -1,0 +1,63 @@
+/* Estilos generales */
+.menu {
+    background-color: #f1f1f1;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-list li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu-list li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-list li a:hover {
+    background-color: #ddd;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 600px) {
+    .menu-list {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-toggle i {
+        margin-right: 5px;
+    }
+
+    .menu-list.open {
+        display: flex;
+        flex-direction: column;
+    }
+}
